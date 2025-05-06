@@ -6,7 +6,7 @@ from collections import Counter
 os.chdir(sys.path[0])
 
 # Wczytaj tekst
-raw_text = open('WordCloud_POL.txt', mode='r', encoding='utf-8').read()
+raw_text = open('WordCloud_ANG.txt', mode='r', encoding='utf-8').read()
 
 # Rozdziel tylko po średnikach
 phrases = raw_text.split(';')
@@ -32,4 +32,4 @@ wc = WordCloud(
 wc.generate_from_frequencies(phrase_counts)
 
 # Zapisz do pliku
-wc.to_file('wordcloud_output.png')
+wc.to_file('wordcloud_output_ANG.png')
